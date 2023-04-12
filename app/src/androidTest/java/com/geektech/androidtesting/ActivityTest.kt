@@ -29,8 +29,8 @@ class ActivityTest {
             Espresso.onView(withId(R.id.btn_plus)).perform(ViewActions.click())
             delay(1000)
             Espresso.onView(withId(R.id.tv_result))
-                .check(ViewAssertions.matches(ViewMatchers.withText("9.0")))
-            delay(1000)
+                .check(ViewAssertions.matches(ViewMatchers.withText("30")))
+            delay(2000)
         }
     }
 
@@ -43,11 +43,11 @@ class ActivityTest {
             Espresso.onView(withId(R.id.et_second)).perform(ViewActions.typeText("6"))
             Espresso.onView(withId(R.id.et_second)).perform(ViewActions.closeSoftKeyboard())
             delay(1000)
-            Espresso.onView(withId(R.id.btn_plus)).perform(ViewActions.click())
+            Espresso.onView(withId(R.id.btn_divide)).perform(ViewActions.click())
             delay(1000)
             Espresso.onView(withId(R.id.tv_result))
-                .check(ViewAssertions.matches(ViewMatchers.withText("9.0")))
-            delay(1000)
+                .check(ViewAssertions.matches(ViewMatchers.withText("4")))
+            delay(2000)
         }
     }
 }
